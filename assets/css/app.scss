@@ -1,6 +1,6 @@
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
 
-body {
-  background: grey;
-}
+@import "layout/footer";
+@import "layout/header";
+@import "layout/nav";
