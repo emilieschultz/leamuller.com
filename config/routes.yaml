@@ -13,3 +13,41 @@ about:
     controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
         template: pages/about.html.twig
+
+gallery_watercolors:
+    path:         /galerie-aquarelles
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: pages/gallery-watercolors.html.twig
+
+gallery_paintings:
+    path:         /galerie-paintings
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: pages/gallery-paintings.html.twig
+
+
+gallery_pastel:
+    path:         /galerie-pastels
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: pages/gallery-pastel.html.twig
+
+
+order:
+    path:         /commande
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: pages/order.html.twig
+
+price-list:
+    path:         /tarifs
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: pages/price-list.html.twig
+
+contact:
+    path:         /contact
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: pages/contact.html.twig
