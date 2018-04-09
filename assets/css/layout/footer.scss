@@ -6,4 +6,8 @@
     padding-top: 15px;
     color: #fff;
     background-color: $dark;
+
+    .socials {
+        flex-direction: row;
+    }
 }
