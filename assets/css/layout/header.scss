@@ -1,5 +1,24 @@
+$header-line-width: 300px;
+
 #header {
-  img {
-    width: 100%;
+  background-color: $dark;
+  height: 150px;
+
+    .header-line {
+      width: $header-line-width;
+      height: 3px;
+      border-radius: 5px;
+      background-color: rgb(242, 138,116);
+      position: absolute;
+      top: 100px;
+      left: 60%;
+      margin-left: -$header-line-width/2;
+    }
+
+    .header-logo {
+      width: 500px;
+      height: 150px ;
+      display: block;
+      margin: auto;
   }
 }

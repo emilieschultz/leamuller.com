@@ -1,13 +1,37 @@
 .footer {
-    display: block;
     font-size: 80%;
-    height: 50px;
     text-align: center;
-    padding-top: 15px;
     color: #fff;
     background-color: $dark;
 
-    .socials {
-        flex-direction: row;
+    .footer-credits {
+        padding: 20px 0;
+        margin-bottom: 0;
     }
+
+    .socials {
+        padding: 17px;
+
+        &.fab {
+            justify-content: space-around;
+            background-color: darkred;
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            width: 0px;
+            height: 100px;
+
+            &.fa-facebook-f:hover {
+                background: #3B5998;
+                color: white;
+            }
+
+            &.fa-instagram:hover {
+                background: lighten(red, 20);
+                color: white;
+            }
+        }
+    }
+
+
 }
