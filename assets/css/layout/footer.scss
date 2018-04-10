@@ -12,14 +12,15 @@
     .socials {
         padding: 17px;
 
-        &.fab {
+        .fab {
             justify-content: space-around;
-            background-color: darkred;
+            background-color: dimgrey;
             color: white;
             text-decoration: none;
-            border-radius: 50%;
-            width: 0px;
-            height: 100px;
+            border-radius: 30%;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
 
             &.fa-facebook-f:hover {
                 background: #3B5998;
@@ -28,6 +29,11 @@
 
             &.fa-instagram:hover {
                 background: lighten(red, 20);
+                color: white;
+            }
+
+            &.fa-youtube:hover {
+                background: $red;
                 color: white;
             }
         }
