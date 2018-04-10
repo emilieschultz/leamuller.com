@@ -1,29 +1,48 @@
+
 .home {
   background-color: $dark;
-  height: 100%;
-  width: 100%;
 
-  .carousel {
 
+
+  .home-speed-drawing {
+    padding: 20px;
 
   }
 
-  .home-speed-drawing {
-
-
+  .speed-drawing-text {
+    color: $white;
+    line-height: 400px;
   }
 
   .home-pastel {
+   // background-color: #0c5460;
     padding: 30px;
-    display: block;
+
+  }
+
+  .home-pastel-text {
+    color: $white;
+    line-height: 400px;
+    //background-color: #0c5460;
+    margin: auto;
   }
 
   .home-watercolors {
+    //background-color: #0c5460;
     padding: 30px;
+    display: block;
 
   }
 
+  .home-watercolors-text {
+    color: $white;
+    line-height: 400px;
+    //background-color: #0c5460;
+    margin: auto;
+  }
+
   .home-paintings {
+    //background-color: #0c5460;
     padding: 30px;
 
   }
