@@ -1,117 +1,59 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="home container">
+<div class="home">
 
-        <div class="row justify-content-between">
-            <div class="col-4">
-                <iframe class="home-speed-drawing" width="660" height="415" src="https://www.youtube.com/embed/JWJps9IaciE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="section section-light">
+        <div class="container">
+            <div class="home-intro">
+                text introduction
             </div>
-            <div class="col-4 speed-drawing-text">
+            <div class="row home-speed-drawing">
+                <div class="col align-self-center">
+                    <iframe class="home-speed-drawing border border-white" width="560"height="415" src="https://www.youtube.com/embed/JWJps9IaciE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="speed-drawing-text">
                 Text speed drawing
             </div>
         </div>
+    </section>
 
 
-        <div class="row justify-content-between">
-            <div class="col-4 home-pastel-text">
-                Text pastel
-            </div>
-            <div class="col-4">
-                <div id="carouselExampleIndicators" class="carousel slide home-pastel" data-ride="carousel">
-                    <ol class="carousel-indicator ">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-25.jpg') }}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-9.jpg') }}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-16.jpg') }}" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+    <section class="section section-dark">
+        <div class="container">
+            <div class="home-pastel">
+            <img class="img-thumbnail" width="450" src="{{ asset('img/photos/photo-25.jpg') }}" alt="First slide">
+                <div class="home-pastel-text">
+                    Text pastel
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="row justify-content-between">
-            <div class="col-4">
-                <div id="carouselExampleIndicators" class="carousel slide home-watercolors" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-21.jpg') }}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-24.jpg') }}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-28.jpg') }}" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="home-watercolors">
+                <img class="img-thumbnail" width="450" src="{{ asset('img/photos/photo-21.jpg') }}" alt="First slide">
+                <div class="home-watercolors-text">
+                    Text watercolors
                 </div>
-            </div>
-            <div class="col-4 home-watercolors-text">
-                Text watercolors
             </div>
         </div>
+    </section>
 
-        <div class="row justify-content-between">
-            <div class="col-4 home-pastel-text">
-                Text paintings
-            </div>
-            <div class="col-4">
-                <div id="carouselExampleIndicators" class="carousel slide home-paintings" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-10.jpg') }}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-15.jpg') }}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('img/photos/photo-19.jpg') }}" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+
+    <section class="section section-dark">
+        <div class="container">
+            <div class="home-paintings">
+                <img class="img-thumbnail" width="450" src="{{ asset('img/photos/photo-10.jpg') }}" alt="First slide">
+                <div class="home-paintings-text">
+                    Text paintings
                 </div>
             </div>
-    </div>
-{% endblock %}
+        </div>
+    </section>
+</div>
+
+    {% endblock %}

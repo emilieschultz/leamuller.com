@@ -70,7 +70,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #d0c5c0 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -819,7 +819,7 @@ $list-group-action-active-bg:       $gray-200 !default;
 
 // Image thumbnails
 
-$thumbnail-padding:                 .25rem !default;
+$thumbnail-padding:                 .35rem !default;
 $thumbnail-bg:                      $body-bg !default;
 $thumbnail-border-width:            $border-width !default;
 $thumbnail-border-color:            $gray-300 !default;

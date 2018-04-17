@@ -1,0 +1,15 @@
+
+.section {
+  padding: 50px 0;
+
+  &.section-light {
+    background-color: $light;
+    color: $dark;
+  }
+
+  &.section-dark {
+    background-color: darken($light, 5);
+    color: $dark;
+  }
+}
+
