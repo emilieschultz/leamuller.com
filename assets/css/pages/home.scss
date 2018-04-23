@@ -2,56 +2,89 @@
 .home {
   display: block;
 
+  .container{
+    padding: 50px
+  }
+
+  .container-home-intro {
+    padding-bottom: 150px;
+  }
+
   .home-intro {
     //color: $white;
-    padding: 40px;
+    text-align: justify;
+  }
+
+  .home-intro-h1 {
     text-align: center;
   }
 
-  .home-speed-drawing {
-    text-align: center;
 
+  .home-speed-drawing-video {
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    border: solid 6px white;
+    bottom: -50px;
   }
 
   .speed-drawing-text {
-    //color: $white;
-    padding: 40px;
-    text-align: center;
+    text-align: justify;
+  }
+
+  .container-home-pastel {
+    height: 1000px;
+    padding-top: 300px;
   }
 
   .home-pastel {
    // background-color: #0c5460;
-    padding: 30px;
-    text-align: center;
+    //text-align: center;
+  }
+
+  .home-pastel-img {
+    display: inline-block;
+    //padding-top: 300px;
+
   }
 
   .home-pastel-text {
     //color: $white;
     //background-color: #0c5460;
-    padding: 40px;
-    text-align: center;
+    display: inline-block;
+    padding: 50px;
+    text-align: justify;
   }
 
   .home-watercolors {
     //background-color: #0c5460;
-    text-align: center;
+    //text-align: center;
+  }
+
+  .home-watercolors-img {
+    display: inline-block;
   }
 
   .home-watercolors-text {
     //color: $white;
     //background-color: #0c5460;
-    padding: 40px;
-    text-align: center;
+    display: inline-block;
+    padding: 50px;
+    text-align: justify;
   }
 
   .home-paintings {
     //background-color: #0c5460;
-    text-align: center;
+    //text-align: center;
+  }
 
+  .home-paintings-img {
+    display: inline-block;
   }
 
   .home-paintings-text {
-    padding: 40px;
-    text-align: center;
+    display: inline-block;
+    padding: 50px;
+    text-align: justify;
   }
 }

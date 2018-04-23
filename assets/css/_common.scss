@@ -3,12 +3,12 @@
   padding: 50px 0;
 
   &.section-light {
-    background-color: $light;
+    background-color: whitesmoke;
     color: $dark;
   }
 
   &.section-dark {
-    background-color: darken($light, 5);
+    background-color: lighten($light, 10);
     color: $dark;
   }
 }

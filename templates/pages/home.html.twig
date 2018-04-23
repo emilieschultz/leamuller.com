@@ -1,59 +1,89 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="home">
+    <div class="home">
 
-    <section class="section section-light">
-        <div class="container">
-            <div class="home-intro">
-                text introduction
-            </div>
-            <div class="row home-speed-drawing">
-                <div class="col align-self-center">
-                    <iframe class="home-speed-drawing border border-white" width="560"height="415" src="https://www.youtube.com/embed/JWJps9IaciE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <section class="section section-light">
+                <iframe class="home-speed-drawing-video" width="450" height="350"
+                        src="https://www.youtube.com/embed/JWJps9IaciE" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="container container-home-intro">
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <div class="home-intro">
+                            <h1 class="home-intro-h1">Bonjour et bienvenue !<br><br></h1>
+                            <p>Je suis Léa, une étudiante de 21 ans, et je réalise des portraits animaliers sur
+                                commande,
+                                d'après photographie.</p>
+                            <p>Sur mon site, vous trouverez l'ensemble de mes réalisations à travers mes galeries
+                                d'aquarelles, de pastels et de peintures.</p>
+                        </div>
+
+                        <div class="speed-drawing-text">
+                            <p>Je possède une chaîne YouTube sur laquelle vous pourrez découvrir mes vidéos de " speed
+                                drawing ".</p>
+
+                            <p>Le speed drawing est une vidéo montrant, de manière accélérée, la réalisation d'un
+                                dessin.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="speed-drawing-text">
-                Text speed drawing
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="section section-dark">
-        <div class="container">
-            <div class="home-pastel">
-            <img class="img-thumbnail" width="450" src="{{ asset('img/photos/photo-25.jpg') }}" alt="First slide">
-                <div class="home-pastel-text">
-                    Text pastel
+        <section class="section section-dark">
+            <div class="container container-home-pastel">
+                <div class="row">
+                    <div class="col-9 offset-1">
+                        <div class="home-pastel">
+                            <a href="{{ path('gallery_pastel') }}"><img class="home-pastel-img" width="350"
+                                                                        src="{{ asset('img/photos/photo-25.jpg') }}"
+                                                                        alt="pastel drawing"></a>
+                            <div class="home-pastel-text">
+                                <h2>Travaux au pastel</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="section section-light">
-        <div class="container">
-            <div class="home-watercolors">
-                <img class="img-thumbnail" width="450" src="{{ asset('img/photos/photo-21.jpg') }}" alt="First slide">
-                <div class="home-watercolors-text">
-                    Text watercolors
+        <section class="section section-light">
+            <div class="container container-home-watercolors">
+                <div class="row">
+                    <div class="col-9 offset-1">
+                        <div class="home-watercolors">
+                            <div class="home-watercolors-text">
+                                <h2>Travaux à l'aquarelle</h2>
+                            </div>
+                            <a href="{{ path('gallery_watercolors') }}"><img class="home-watercolors-img" width="350"
+                                                                             src="{{ asset('img/photos/photo-21.jpg') }}"
+                                                                             alt="First slide"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="section section-dark">
-        <div class="container">
-            <div class="home-paintings">
-                <img class="img-thumbnail" width="450" src="{{ asset('img/photos/photo-10.jpg') }}" alt="First slide">
-                <div class="home-paintings-text">
-                    Text paintings
+        <section class="section section-dark">
+            <div class="container container-home-paintings">
+                <div class="row">
+                    <div class="col-9 offset-1">
+                        <div class="home-paintings">
+                            <a href="{{ path('gallery_paintings') }}"><img class="home-paintings-img" width="350"
+                                                                           src="{{ asset('img/photos/photo-10.jpg') }}"
+                                                                           alt="First slide"></a>
+                            <div class="home-paintings-text">
+                                <h2>Travaux à l'acrylique</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
-    {% endblock %}
+{% endblock %}
