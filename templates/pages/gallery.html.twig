@@ -1,11 +1,32 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-gallery-page
+    <div class="gallery">
+        <section class="section section-gallery">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-3 offset-1">
+                        <a href="{{ path('gallery_watercolors') }}"><img class="img-gallery-watercolors" width="250"
+                                                                         src="{{ asset('img/photos/photo-21.jpg') }}"></a>
+                        <p class="p-gallery-watercolors">Aquarelles</p>
+                    </div>
 
-        <a href="{{ path('gallery_watercolors') }}">Aquarelles</a>
-        <a href="{{ path('gallery_paintings') }}">Peintures</a>
-        <a href="{{ path('gallery_pastel') }}">Pastels</a>
 
+                    <div class="col-3 offset-1">
+                        <a href="{{ path('gallery_paintings') }}"><img class="img-gallery-paintings" width="250"
+                                                                       src="{{ asset('img/photos/photo-10.jpg') }}"></a>
+                        <p class="p-gallery-paintings">Acryliques</p>
+                    </div>
 
+                    <div class="col-3 offset-1">
+                        <a href="{{ path('gallery_pastel') }}"><img class="img-gallery-pastel" width="250"
+                                                                    src="{{ asset('img/photos/photo-25.jpg') }}"></a>
+                        <p class="p-gallery-pastel">Pastels</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+s
+    </div>
 {% endblock %}
