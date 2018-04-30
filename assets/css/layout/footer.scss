@@ -3,14 +3,21 @@
     text-align: center;
     color: #fff;
     background-color: $dark;
+    height: 150px;
+
+
+    .footer-btn-mail {
+        padding: 45px 0;
+        margin-bottom: 0;
+    }
 
     .footer-credits {
-        padding: 20px 0;
+        padding: 53px 0;
         margin-bottom: 0;
     }
 
     .socials {
-        padding: 17px;
+        padding: 47px;
 
         .fab {
             justify-content: space-around;

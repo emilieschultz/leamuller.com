@@ -2,7 +2,8 @@ $header-line-width: 300px;
 
 #header {
   background-color: $dark;
-  height: 150px;
+  height: 250px;
+  position: relative;
 
     .header-line {
       width: $header-line-width;
@@ -10,7 +11,7 @@ $header-line-width: 300px;
       border-radius: 5px;
       background-color: rgb(242, 138,116);
       position: absolute;
-      top: 100px;
+      top: 150px;
       left: 60%;
       margin-left: -$header-line-width/2;
     }
@@ -18,7 +19,21 @@ $header-line-width: 300px;
     .header-logo {
       width: 500px;
       height: 150px ;
-      display: block;
-      margin: auto;
+      position: absolute;
+      top: 18px;
+      left: 21%;
+
+
+  }
+
+  .gorilla-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 306px;
+    z-index: 1000;
+
+
+
   }
 }
