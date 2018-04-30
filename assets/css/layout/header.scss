@@ -12,8 +12,9 @@ $header-line-width: 300px;
       background-color: rgb(242, 138,116);
       position: absolute;
       top: 150px;
-      left: 60%;
+      left: 55%;
       margin-left: -$header-line-width/2;
+      z-index: 1010;
     }
 
     .header-logo {
@@ -22,14 +23,15 @@ $header-line-width: 300px;
       position: absolute;
       top: 18px;
       left: 21%;
+      z-index: 1015;
 
 
   }
 
   .gorilla-header {
-    position: absolute;
-    top: 0;
-    right: 0;
+    //position: absolute;
+    //top: 0;
+    //right: 0;
     height: 306px;
     z-index: 1000;
 
