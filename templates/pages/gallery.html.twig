@@ -2,31 +2,154 @@
 
 {% block body %}
     <div class="gallery">
-        <section class="section section-gallery">
-            <div class="container-fluid">
-                <div class="row ">
-                    <div class="col-3 offset-1">
-                        <a href="{{ path('gallery_watercolors') }}"><img class="img-gallery-watercolors" width="250"
-                                                                         src="{{ asset('img/photos/photo-21.jpg') }}"></a>
-                        <p class="p-gallery-watercolors">Aquarelles</p>
+
+
+        <div id="gallery-pastel">
+            <section class="section section-light">
+                <div class="container">
+                    <div class="gallery-pastel-title">
+                        <h2 class="text-center">Pastel</h2>
                     </div>
-
-
-                    <div class="col-3 offset-1">
-                        <a href="{{ path('gallery_paintings') }}"><img class="img-gallery-paintings" width="250"
-                                                                       src="{{ asset('img/photos/photo-10.jpg') }}"></a>
-                        <p class="p-gallery-paintings">Acryliques</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-9.jpg') }}" alt="jellyfish pastel">
+                        </div>
+             .           <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-11.jpg') }}" alt="barbary macaque pastel">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-23.jpg') }}" alt="cockatiels pastel">
+                        </div>
                     </div>
-
-                    <div class="col-3 offset-1">
-                        <a href="{{ path('gallery_pastel') }}"><img class="img-gallery-pastel" width="250"
-                                                                    src="{{ asset('img/photos/photo-25.jpg') }}"></a>
-                        <p class="p-gallery-pastel">Pastels</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-16.jpg') }}" alt="dog pastel">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-14.jpg') }}" alt="german shepherd pastel">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-12.jpg') }}" alt="white cat pastel">
+                        </div>
                     </div>
+                    <div class="row">
 
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-25.jpg') }}" alt="owls pastel">
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-s
+
+            </section>
+        </div>
+
+
+        <div id="gallery-watercolors">
+            <section class="section section-dark">
+                <div class="container">
+                    <div class="gallery-watercolors-title">
+                        <h2 class="text-center">Aquarelles</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-0.jpg') }}" alt="red bird watercolors" width="250">
+                        </div>
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-13.jpg') }}" alt="parrots watercolors" width="250">
+                        </div>
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-22.jpg') }}" alt="horse watercolors" width="250">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-5.jpg') }}" alt="cheetah watercolors" width="250">
+                        </div>
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-7.jpg') }}" alt="heron watercolors" width="250">
+                        </div>
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-22.jpg') }}" alt="horse watercolors" width="250">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-21.jpg') }}" alt="raccoon watercolors" width="250">
+                        </div>
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-1.jpg') }}" alt="Jack Russel watercolors" width="250">
+
+                        </div>
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-24.jpg') }}" alt="gorilla watercolors" width="250">
+                            <img src="{{ asset('img/photos/photo-2.jpg') }}" alt="guinea pig watercolors" width="250">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{ asset('img/photos/photo-28.jpg') }}" alt="white horse watercolors" width="250">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="gallery-paintings">
+            <section class="section section-light">
+                <div class="container">
+                    <div class="gallery-paintings-title">
+                        <h2 class="text-center">Peintures</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-26.jpg') }}" alt="red parrot paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-20.jpg') }}" alt="dog paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-17.jpg') }}"
+                                 alt="australian shepherd paintings">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-19.jpg') }}" alt="two dogs paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-10.jpg') }}" alt="kingfisher paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-6.jpg') }}" alt="butterfly paintings">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-18.jpg') }}" alt="horse paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-15.jpg') }}" alt="lemur paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-27.jpg') }}" alt="black cat paintings">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-3.jpg') }}" alt="hedgehog paintings">
+                        </div>
+                        <div class="col-4">
+                            <img width="250" src="{{ asset('img/photos/photo-4.jpg') }}" alt="gorilla paintings">
+                            <img width="250" src="{{ asset('img/photos/photo-29.jpg') }}" alt="toucan paintings">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 {% endblock %}

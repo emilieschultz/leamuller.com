@@ -1,6 +1,27 @@
 .gallery {
-  background-color: lighten($light, 10);
 
+  #gallery-watercolors {
+    img {
+      padding-top: 20px;
+    }
 
+    .gallery-watercolors-title {
+    }
+
+  }
+
+  #gallery-paintings {
+    img {
+      padding-top: 20px;
+    }
+  }
+
+  #gallery-pastel {
+    img {
+      padding-top: 20px;
+    }
+  }
 
 }
+
+

@@ -2,40 +2,33 @@ $header-line-width: 300px;
 
 #header {
   background-color: $dark;
-  height: 250px;
-  position: relative;
+  height: 300px;
+  //position: relative;
 
-    .header-line {
-      width: $header-line-width;
-      height: 3px;
-      border-radius: 5px;
-      background-color: rgb(242, 138,116);
-      position: absolute;
-      top: 150px;
-      left: 55%;
-      margin-left: -$header-line-width/2;
-      z-index: 1010;
-    }
+  .container {
+    padding: 30px 0 30px 0;
+  }
 
-    .header-logo {
-      width: 500px;
-      height: 150px ;
-      position: absolute;
-      top: 18px;
-      left: 21%;
-      z-index: 1015;
+
+  .header-line {
+    width: $header-line-width;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgb(242, 138, 116);
+    z-index: 1010;
+  }
+
+  .header-logo {
+    //background-color: coral;
+    width: 500px;
+    height: 150px;
+    z-index: 1015;
+
+  }
+
+  header-art-animalier {
 
 
   }
 
-  .gorilla-header {
-    //position: absolute;
-    //top: 0;
-    //right: 0;
-    height: 306px;
-    z-index: 1000;
-
-
-
-  }
 }

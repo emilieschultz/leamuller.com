@@ -24,20 +24,20 @@ gallery_watercolors:
     path:         /galerie-aquarelles
     controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
-        template: pages/gallery_watercolors.html.twig
+        template: pages/gallery.html.twig
 
 gallery_paintings:
     path:         /galerie-paintings
     controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
-        template: pages/gallery_paintings.html.twig
+        template: pages/gallery.html.twig
 
 
 gallery_pastel:
     path:         /galerie-pastels
     controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     defaults:
-        template: pages/gallery_pastel.html.twig
+        template: pages/gallery.html.twig
 
 
 order:
