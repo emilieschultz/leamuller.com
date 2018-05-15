@@ -1,0 +1,24 @@
+#order {
+  display: block;
+
+
+  .container {
+    padding: 50px;
+
+    .order-bird {
+      fill: $dark;
+      width: 40px;
+
+    }
+
+    .order-dog {
+      fill: $dark;
+      width: 40px;
+    }
+
+    .order-lezard {
+      fill: $dark;
+      width: 40px;
+    }
+  }
+}
