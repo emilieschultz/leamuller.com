@@ -37,12 +37,12 @@
                 <div class="row">
                     <div class="col-9 offset-1">
                         <div class="home-pastel">
-                            <a href="{{ path('gallery') }}"><img class="home-pastel-img" width="350"
-                                                                        src="{{ asset('img/photos/photo-25.jpg') }}"
-                                                                        alt="pastel drawing"></a>
                             <div class="home-pastel-text">
                                 <h2>Travaux au pastel</h2>
                             </div>
+                            <a href="{{ path('gallery') }}#gallery-pastel"><img class="home-pastel-img" width="350"
+                                                                        src="{{ asset('img/photos/photo-25.jpg') }}"
+                                                                        alt="pastel drawing"></a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,25 @@
         </section>
 
 
+
         <section class="section section-light">
+            <div class="container container-home-paintings">
+                <div class="row">
+                    <div class="col-9 offset-1">
+                        <div class="home-paintings">
+                            <a href="{{ path('gallery_paintings') }}#gallery-paintings"><img class="home-paintings-img" width="350"
+                                                                           src="{{ asset('img/photos/photo-10.jpg') }}"
+                                                                           alt="First slide"></a>
+                            <div class="home-paintings-text">
+                                <h2>Travaux à la peinture</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark">
             <div class="container container-home-watercolors">
                 <div class="row">
                     <div class="col-9 offset-1">
@@ -58,27 +76,9 @@
                             <div class="home-watercolors-text">
                                 <h2>Travaux à l'aquarelle</h2>
                             </div>
-                            <a href="{{ path('gallery_watercolors') }}"><img class="home-watercolors-img" width="350"
+                            <a href="{{ path('gallery_watercolors') }}#gallery-watercolors"><img class="home-watercolors-img" width="350"
                                                                              src="{{ asset('img/photos/photo-21.jpg') }}"
                                                                              alt="First slide"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section section-dark">
-            <div class="container container-home-paintings">
-                <div class="row">
-                    <div class="col-9 offset-1">
-                        <div class="home-paintings">
-                            <a href="{{ path('gallery_paintings') }}"><img class="home-paintings-img" width="350"
-                                                                           src="{{ asset('img/photos/photo-10.jpg') }}"
-                                                                           alt="First slide"></a>
-                            <div class="home-paintings-text">
-                                <h2>Travaux à l'acrylique</h2>
-                            </div>
                         </div>
                     </div>
                 </div>

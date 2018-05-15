@@ -6,8 +6,10 @@
 
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('lib/magnific-popup/magnific-popup.css') }}">
+
             <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
-            <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+            <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
         {% endblock %}
@@ -21,7 +23,36 @@
         {% include 'layout/footer.html.twig' %}
 
         {% block javascripts %}
+            <script src="{{ asset('lib/jquery.min.js') }}"></script>
+            <script src="{{ asset('lib/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
             <script src="{{ asset('build/js/app.js') }}"></script>
+
+            <script>
+                $
+                $('.popup').magnificPopup({
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    },
+                    mainClass: 'mfp-with-zoom',
+                    zoom: {
+                        enabled: true, // By default it's false, so don't forget to enable it
+
+                        duration: 300, // duration of the effect, in milliseconds
+                        easing: 'ease-in-out', // CSS transition easing function
+
+                        // The "opener" function should return the element from which popup will be zoomed in
+                        // and to which popup will be scaled down
+                        // By defailt it looks for an image tag:
+                        opener: function(openerElement) {
+                            // openerElement is the element on which popup was initialized, in this case its <a> tag
+                            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                            return openerElement.is('img') ? openerElement : openerElement.find('img');
+                        }
+                    }
+                });
+
+            </script>
         {% endblock %}
     </body>
 
