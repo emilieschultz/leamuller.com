@@ -7,7 +7,7 @@
   }
 
   .container-home-intro {
-    padding-bottom: 150px;
+    //padding-bottom: 150px;
   }
 
   .home-intro {
@@ -21,11 +21,13 @@
 
 
   .home-speed-drawing-video {
-    position: absolute;
-    left: 50%;
-    margin-left: -225px;
+   // position: absolute;
+    //left: 50%;
+    //margin-left: -225px;
     border: solid 6px white;
-    bottom: -110px;
+    //bottom: -160px;
+    z-index: 1;
+    margin-top: 50px;
   }
 
   .speed-drawing-text {
@@ -33,22 +35,70 @@
   }
 
   .container-home-gallery {
-    height: 1000px;
-    padding-top: 400px;
+    //height: 1000px;
+    //padding-top: 200px;
   }
 
   .home-gallery {
 
+    .home-gallery-img {
+      width: 100%;
 
+      &:hover {
+        opacity: 0.9;
+      }
+
+    }
   }
 
-  .home-gallery-img {
-    width: 700px;
+    .home-photographie-p {
+      display: inline-block;
+      padding: 10px;
+      background-color: $light;
+      border-radius: 1%;
+      margin-bottom: 40px;
+    }
+
+  .home-take-picture {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 40px;
 
 
+    .rotate-img {
+      transform: rotate(7deg);
+    }
 
+    .img-thumbnail {
+      padding: 8px 8px 30px 8px;
 
+      -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+      -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+      -o-box-shadow: 1px 1px 2px 1px #cfcfcf;
+      box-shadow: 1px 1px 2px 1px #cfcfcf;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=2);
+
+    }
   }
+
+  .home-technique-p {
+    display: inline-block;
+    padding: 10px;
+    background-color: $light;
+    border-radius: 1%;
+  }
+
+  .home-format-p {
+    display: inline-block;
+    padding: 10px;
+    background-color: $light;
+    border-radius: 1%;
+  }
+
 
 
 }

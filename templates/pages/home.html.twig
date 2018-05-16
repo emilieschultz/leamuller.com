@@ -4,12 +4,10 @@
     <div class="home">
 
         <section class="section section-light">
-            <iframe class="home-speed-drawing-video" width="450" height="350"
-                    src="https://www.youtube.com/embed/JWJps9IaciE" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
             <div class="container container-home-intro">
                 <div class="row">
-                    <div class="col-8 offset-2">
+                    <div class="col-lg-8 offset-lg-2 col-12">
                         <div class="home-intro">
                             <h1 class="home-intro-h1">Bonjour et bienvenue !<br><br></h1>
                             <p>Je suis Léa, une étudiante de 21 ans, et je réalise des portraits animaliers sur
@@ -28,6 +26,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <iframe class="home-speed-drawing-video" width="450" height="350"
+                            src="https://www.youtube.com/embed/JWJps9IaciE" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
@@ -36,7 +39,7 @@
             <div class="container container-home-gallery">
                 <div class="home-gallery">
                     <div class="row">
-                        <div class="col-8 offset-2">
+                        <div class="col-lg-8 offset-lg-2">
                             <div class="home-gallery-text">
                             </div>
                             <a href="{{ path('gallery') }}#gallery-pastel"><img class="home-gallery-img"
@@ -55,8 +58,8 @@
             <div class="section section-light">
                 <div class="container">
                     <div class="order-take-picture">
-                        <div class="col-8 offset-2">
-                            <p class="order-intro-1 text-justify">Si vous souhaitez immortaliser cette étincelle qui
+                        <div class="col-lg-9 offset-lg-1">
+                            <p class="order-intro-1 text-center">Si vous souhaitez immortaliser cette étincelle qui
                                 rend
                                 votre
                                 animal de compagnie unique, ou bien offrir un cadeau à l'un de vos proches, je vous
@@ -91,13 +94,101 @@
                                     </g>
                                 </svg>
                             </div>
-                            <p class="order-intro-2 text-justify">Avant de commander votre portrait, il faut tout
+                            <p class="order-intro-2 text-center">Avant de commander votre portrait, il faut tout
                                 d'abord
                                 que
                                 vous choisissiez la photographie qui me servira de modèle, la technique qui sera
                                 utilisée,
                                 et
-                                enfin, les dimensions de votre tableau.</p>
+                                enfin, les dimensions de votre tableau.</p> <br><br><br>
+                        </div>
+                        <div class="home-photographie">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <h2>Quelle photographie ? </h2>
+                                    <p class="home-photographie-p text-justify">Il se peut que vous ayez déjà de
+                                        fabuleux
+                                        clichés de votre compagnon, auquel cas vous
+                                        n'aurez plus qu'à me les envoyer. À l'inverse, si vous n'en possédez aucun
+                                        ou
+                                        qu'il
+                                        ne met pas suffisamment en valeur votre animal, un petit shooting photo
+                                        s'imposera !<br><br>
+
+                                        ​
+
+                                        L'idéal est de prendre une photo en extérieur ou avec une lumière naturelle,
+                                        il
+                                        faut
+                                        éviter à tout prix le contre-jour ainsi qu'un éclairage trop direct (cela
+                                        pourrait
+                                        altérer les couleurs). N'oubliez pas de vous positionner à la hauteur de
+                                        votre
+                                        animal pour réaliser un bon cadrage.<br><br>
+
+                                        ​
+
+                                        Bon courage et soyez patient pour saisir le meilleur moment ;-)</p>
+
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="home-take-picture">
+                                        <img class="img-thumbnail" width="200"
+                                             src="{{ asset('img/photos/salem-beau.webp') }}"
+                                             alt="belle photo d'un chat noir"/>
+                                        <img class="img-thumbnail rotate-img" width="185"
+                                             src="{{ asset('img/photos/salem-moche.webp') }}"
+                                             alt="photo moins réussie d'un chat noir"/>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="home-technique">
+                            <div class="row">
+                                <div class="col-9 offset-1">
+                                    <h2>Quelle technique ? </h2>
+                                    <p class="home-technique-p text-justify">Deux possibilités s'offrent à vous,
+                                        d'un
+                                        côté
+                                        il y a le pastel sec que j'utilise sur du papier Pastelmat et qui apporte
+                                        une
+                                        certaine finesse du détail; de l'autre vous avez la peinture acrylique que
+                                        je
+                                        travaille sur des toiles en coton, qui demande plus d'attention et nécessite
+                                        une
+                                        exécution assez minutieuse au pinceau.<br><br>
+
+                                        ​
+
+                                        Dans les deux cas, je reste consciencieuse et j'aime rendre des portraits
+                                        aussi
+                                        vivants que possible :-) !</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-format">
+                            <div class="row">
+                                <div class="col-9 offset-1">
+                                    <h2>Quel format ? </h2>
+                                    <p class="home-format-p text-justify">Le choix du format dépendra de plusieurs
+                                        critères.
+                                        Cela peut avoir un rapport avec
+                                        la taille de votre animal, être une question de budget ou tout simplement
+                                        selon
+                                        vos
+                                        préférences. Vous pouvez consulter dans l'onglet <strong>Commande</strong>
+                                        un
+                                        tableau comportant divers
+                                        propositions de formats. Toutefois si vous m'en faites la demande, il est
+                                        tout à
+                                        fait possible de voir ensemble d'autres dimensions (carré, rond etc.).</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
