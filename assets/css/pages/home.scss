@@ -2,12 +2,8 @@
 .home {
   display: block;
 
-  .container{
+  .container {
     padding: 50px
-  }
-
-  .container-home-intro {
-    //padding-bottom: 150px;
   }
 
   .home-intro {
@@ -19,9 +15,8 @@
     text-align: center;
   }
 
-
   .home-speed-drawing-video {
-   // position: absolute;
+    // position: absolute;
     //left: 50%;
     //margin-left: -225px;
     border: solid 6px white;
@@ -32,11 +27,6 @@
 
   .speed-drawing-text {
     text-align: justify;
-  }
-
-  .container-home-gallery {
-    //height: 1000px;
-    //padding-top: 200px;
   }
 
   .home-gallery {
@@ -51,54 +41,24 @@
     }
   }
 
-    .home-photographie-p {
-      display: inline-block;
-      padding: 10px;
-      background-color: $light;
-      border-radius: 1%;
-      margin-bottom: 40px;
+    .home-take-picture {
+      .home-bird {
+        width: 40px;
+        fill: $dark;
+      }
+
+      }
+
+      .home-lezard {
+        width: 40px;
+        fill: $dark;
+
+      }
+
+      .home-dog {
+        width: 40px;
+        fill: $dark;
+
+      }
     }
 
-  .home-take-picture {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-bottom: 40px;
-
-
-    .rotate-img {
-      transform: rotate(7deg);
-    }
-
-    .img-thumbnail {
-      padding: 8px 8px 30px 8px;
-
-      -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
-      -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
-      -o-box-shadow: 1px 1px 2px 1px #cfcfcf;
-      box-shadow: 1px 1px 2px 1px #cfcfcf;
-      filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=2);
-
-    }
-  }
-
-  .home-technique-p {
-    display: inline-block;
-    padding: 10px;
-    background-color: $light;
-    border-radius: 1%;
-  }
-
-  .home-format-p {
-    display: inline-block;
-    padding: 10px;
-    background-color: $light;
-    border-radius: 1%;
-  }
-
-
-
-}

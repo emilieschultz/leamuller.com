@@ -3,17 +3,114 @@
 {% block body %}
     <div id="order">
 
+        <section class="section section-light">
+            <div class="container container-intro">
+                <h4 class="text-center">Voici quelques informations qui j'espère, réussiront à vous guider à travers vos
+                    choix.</h4>
+            </div>
+        </section>
 
-        <div class="section section-light">
-            <div class="container">
 
-                <div class="tariff">
+        <section class="section section-light">
+            <div class="container container-order-photo">
+                <div class="order-photographie">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2>Quelle photographie ? </h2>
+                            <p class="order-photographie-p text-justify">Il se peut que vous ayez déjà de
+                                fabuleux
+                                clichés de votre compagnon, auquel cas vous
+                                n'aurez plus qu'à me les envoyer. À l'inverse, si vous n'en possédez aucun
+                                ou
+                                qu'il
+                                ne met pas suffisamment en valeur votre animal, un petit shooting photo
+                                s'imposera !<br><br>
+                                ​
 
+                                L'idéal est de prendre une photo en extérieur ou avec une lumière naturelle,
+                                il
+                                faut
+                                éviter à tout prix le contre-jour ainsi qu'un éclairage trop direct (cela
+                                pourrait
+                                altérer les couleurs). N'oubliez pas de vous positionner à la hauteur de
+                                votre
+                                animal pour réaliser un bon cadrage.<br><br>
+
+                                ​
+
+                                Bon courage et soyez patient pour saisir le meilleur moment ;-)</p>
+
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="order-take-picture">
+                                <img class="img-thumbnail" width="200"
+                                     src="{{ asset('img/photos/salem-beau.webp') }}"
+                                     alt="belle photo d'un chat noir"/>
+                                <img class="img-thumbnail rotate-img" width="185"
+                                     src="{{ asset('img/photos/salem-moche.webp') }}"
+                                     alt="photo moins réussie d'un chat noir"/>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+        </section>
+        <section class="section section-dark">
+            <div class="container container-order-technique">
+                <div class="order-technique">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2>Quelle technique ? </h2>
+                            <p class="order-technique-p text-justify">Deux possibilités s'offrent à vous pour le choix
+                                de la technique.<br><br>
+
+                                D'un côté il y a le <strong>pastel sec</strong> que j'utilise sur un papier ne
+                                nécessitant pas de
+                                fixation mais qui doit néanmoins être impérativement mis sous verre, car le pastel est
+                                très volatile et le moindre contact avec la matière pourrait altérer le portrait. Les
+                                crayons pastel apportent une certaine finesse du détail et me permettent de créer des
+                                rendus tout aussi doux que dur.<br><br>
+
+                                De l'autre vous avez la <strong>peinture acrylique</strong> que je travaille sur des
+                                toiles en coton.
+                                L'encadrement est ici optionnel puisque les tableaux peuvent directement être accrochés
+                                au mur. L'acrylique me demande plus d'attention, de minutie au pinceau et surtout de
+                                temps.<br><br>
+
+                                Sachez que dans les deux cas, je reste consciencieuse et j'aime rendre des portraits
+                                aussi vivants que possible :-) !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-light">
+            <div class="container container-order-format">
+                <div class="order-format">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2>Quel format ? </h2>
+                            <p class="order-format-p text-justify">Le choix du format pourra dépendre de plusieurs
+                                critères. Cela peut avoir un rapport avec la taille de votre animal, être une question
+                                de budget ou tout simplement selon vos préférences. Vous pouvez consulter dans l'onglet
+                                <a href={{ path('tariff') }}>" Tarifs "</a> un tableau comportant diverses propositions de formats. Toutefois si vous
+                                m'en faites la demande, il est tout à fait possible de voir ensemble d'autres dimensions
+                                (carré, rond etc.).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tariff">
 
         </div>
     </div>
+
+
 
 {% endblock %}

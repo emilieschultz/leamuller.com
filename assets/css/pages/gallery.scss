@@ -1,9 +1,15 @@
 .gallery {
 
+  img:hover {
+    opacity: 0.8;
+  }
+
   #gallery-watercolors {
     img {
       padding-top: 20px;
       width: 100%;
+
+
     }
 
     .gallery-watercolors-title {

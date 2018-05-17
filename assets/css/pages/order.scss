@@ -2,23 +2,51 @@
   display: block;
 
 
-  .container {
+  .order-photographie-p {
+    display: inline-block;
     padding: 10px;
+    background-color: $light;
+    border-radius: 1%;
+    margin-bottom: 40px;
+  }
 
-    .order-bird {
-      fill: $dark;
-      width: 40px;
+  .order-take-picture {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 40px;
 
+    .rotate-img {
+      transform: rotate(7deg);
     }
 
-    .order-dog {
-      fill: $dark;
-      width: 40px;
-    }
+    .img-thumbnail {
+      padding: 8px 8px 30px 8px;
 
-    .order-lezard {
-      fill: $dark;
-      width: 40px;
+      -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+      -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+      -o-box-shadow: 1px 1px 2px 1px #cfcfcf;
+      box-shadow: 1px 1px 2px 1px #cfcfcf;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=2);
+
     }
   }
+
+  .order-technique-p {
+    display: inline-block;
+    padding: 10px;
+    background-color: lighten($light, 20);
+    border-radius: 1%;
+  }
+
+  .order-format-p {
+    display: inline-block;
+    padding: 10px;
+    background-color: $light;
+    border-radius: 1%;
+  }
+
 }
