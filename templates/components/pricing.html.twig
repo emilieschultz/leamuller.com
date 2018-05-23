@@ -1,0 +1,34 @@
+{% set price = price|default('Prix') %}
+{% set format = format|default('Format') %}
+{% set description = description|default('Description') %}
+{% set theme = theme|default('light') %}
+{% set extraPrice = extraPrice|default(null) %}
+{% set extraDescription = extraDescription|default(null) %}
+
+
+<div class="pricing pricing-{{ theme }}">
+    <div class="pricing-format">
+        {{ format }}
+    </div>
+    <div class="pricing-body {% if extraPrice is not null %}has-extraprice{% endif %}">
+        <div class="pricing-description">
+            {{ description }}
+        </div>
+
+        {% if extraPrice is not null %}
+            <div class="pricing-extra-price">
+                {{ extraPrice }}
+            </div>
+        {% endif %}
+
+        {% if extraDescription is not null %}
+            <div class="pricing-extra-description">
+                {{ extraDescription }}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="pricing-price">
+        {{ price }}
+    </div>
+</div>

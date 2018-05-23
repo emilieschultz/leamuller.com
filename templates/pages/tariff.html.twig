@@ -1,27 +1,147 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
- <id class="tariff-page">
+    <div id="tariff-page">
 
-     <section class="section section-light">
-         <div class="container container-tariff-pastel">
-             <h2 class="text-center">Pastel sec</h2>
-         </div>
-
-
-     </section>
-
-     <section class="section section-dark">
-         <div class="container container-tariff-paintings">
-             <h2 class="text-center">Peinture acrylique</h2>
-         </div>
-     </section>
-
+        <section class="section section-light">
+            <div class="container container-tariff-pastel">
+                <h2 class="text-center">Pastel sec</h2>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-12">
+                        <p class="tariff-pastel-intro text-justify"> Réalisés sur un papier Pastelmat de chez
+                            Clairefontaine,
+                            les portraits aux pastels secs doivent, je le rappelle, impérativement être mis sous verre.
+                            Les
+                            tarifs proposés ne comprennent pas l'encadrement, car bien qu'il protège un portrait, il est
+                            aussi
+                            un élément décoratif qui se doit d'être choisi par vos soins et selon vos goûts.</p>
 
 
+                        <p class="tariff-pastel-intro text-justify">Les délais de réalisation pour un pastel sont de 2 à
+                            3
+                            semaines. Si vous souhaitez un format plus
+                            grand ou différent, comme un panoramique ou un carré par exemple, il est possible de voir
+                            cela
+                            ensemble.</p>
+                    </div>
+                </div>
+                <figure class="figure">
+                    <div class="row figure-img">
+                        <div class="col-lg-2 offset-lg-1">
+                            {% include "components/pricing.html.twig" with { format: "18 X 24 cm", description: "sujet unique", price: "60€", theme: 'dark'} %}
+
+                        </div>
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "24 X 30 cm", description: "sujet unique", price: "90€", theme: 'light'} %}
+                        </div>
+
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "30 X 40 cm", description: "sujet unique", price: "120€", theme: 'dark', extraDescription: 'par sujet supplémentaire', extraPrice: '+ 40€'} %}
+                        </div>
+
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "50 X 70 cm", description: "sujet unique", price: "160€", theme: 'light', extraDescription: 'par sujet supplémentaire', extraPrice: '+ 50€'} %}
+                        </div>
+
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "Autre", description: "", price: "sur devis", theme: 'dark'} %}
+                        </div>
+                        <figcaption class="col-lg-10 offset-lg-1 col-12 figure-caption text-center">Les prix indiqués
+                            incluent un
+                            premier aperçu sous forme de
+                            photomontage avant validation ; la réalisation ainsi qu'un suivi régulier de l'avancement du
+                            ou des portraits par correspondance.
+                            Les frais de port sont en supplément et se font en fonction du pays ainsi que du format.
+                        </figcaption>
+
+                    </div>
+
+                </figure>
+            </div>
+        </section>
 
 
- </id>
+        <section class="section section-dark">
+            <div class="container container-tariff-paintings">
+                <h2 class="text-center">Peinture acrylique</h2>
+
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-12">
+                        <p class="tariff-paintings-intro text-justify">Les toiles en coton de chez Gerstaecker se
+                            déclinent sous une multitude de formats, il m'était impossible de tous vous les présenter
+                            accompagnés d'un prix, c'est pourquoi sur ce tableau ne figurent que 4 exemples à titre
+                            indicatif. Carré, rond, triangulaire, panoramique, hexagonal, rectangulaire… Bref il y a de
+                            quoi trouver son bonheur, alors n'hésitez pas à me contacter pour plus de renseignements.
+                            Les délais de réalisation pour une peinture sont de 5 à 6 semaines.
+                        </p>
+
+
+                    </div>
+                </div>
+                <figure class="figure">
+                    <div class="row figure-img">
+                        <div class="col-lg-2 offset-lg-1">
+                            {% include "components/pricing.html.twig" with { format: "18 X 24 cm", description: "sujet unique", price: "60€", theme: 'dark'} %}
+
+                        </div>
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "24 X 30 cm", description: "sujet unique", price: "90€", theme: 'light'} %}
+                        </div>
+
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "30 X 40 cm", description: "sujet unique", price: "120€", theme: 'dark', extraDescription: 'par sujet supplémentaire', extraPrice: '+ 40€'} %}
+                        </div>
+
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "50 X 70 cm", description: "sujet unique", price: "160€", theme: 'light', extraDescription: 'par sujet supplémentaire', extraPrice: '+ 50€'} %}
+                        </div>
+
+                        <div class="col-lg-2">
+                            {% include "components/pricing.html.twig" with { format: "Autre", description: "", price: "sur devis", theme: 'dark'} %}
+                        </div>
+                        <figcaption class="col-lg-10 offset-lg-1 col-12 figure-caption text-center">Les prix indiqués
+                            incluent un
+                            premier aperçu sous forme de
+                            photomontage avant validation ; la réalisation ainsi qu'un suivi régulier de l'avancement du
+                            ou des portraits par correspondance.
+                            Les frais de port sont en supplément et se font en fonction du pays ainsi que du format.
+                        </figcaption>
+
+                    </div>
+
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container container-tariff-pay">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-12">
+                        <p class="tariff-paintings-intro text-justify">Concernant le paiement, il vous sera demandé,
+                            après un
+                            premier contact et la validation d'un projet, un acompte de 30% (par chèque, virement
+                            bancaire ou
+                            PayPal). Dès réception de ce premier versement, je débuterai la réalisation de votre
+                            portrait et
+                            vous enverrai régulièrement des images de l'avancée de mon travail. <br><br>
+                            Une fois celui-ci fini, un aperçu final vous sera transmis par mail, nous pourrons alors à
+                            ce moment
+                            discuter d'éventuels changements. Lorsqu'à vos yeux tout vous semblera parfait, vous pourrez
+                            finaliser la commande en réglant le restant du paiement avant l'expédition de
+                            l'œuvre.<br><br>
+                            L'envoi du tableau se fait généralement entre 48h et 72h, dans un paquet cartonné
+                            soigneusement
+                            emballé pour assurer sa sécurité lors de son transport.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
 
 
 

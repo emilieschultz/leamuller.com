@@ -60,8 +60,22 @@
         </section>
         <section class="section section-dark">
             <div class="container container-order-technique">
-                <div class="order-technique">
+                <div id="order-technique">
                     <div class="row">
+                        <div class="col-lg-6">
+                            <div class="order-model">
+                                <a href="{{ asset('img/photos/peinturemodèle.jpg') }}" class="popup img-pastel-painting"
+                                   title="Version peinte à gauche et version originale à droite"><img
+                                            class="img-thumbnail" width="157"
+                                            src="{{ asset('img/photos/peinturemodèle.jpg') }}"
+                                            alt="photo d'un cocker noir et blanc scindée en deux (photographie originale et version peinture"/></a>
+                                <a href="{{ asset('img/photos/pastelmodèle.jpg') }}" class="popup img-pastel-painting"
+                                   title="Version au pastel à gauche et version originale à droite"><img
+                                            class="img-thumbnail" width="200"
+                                            src="{{ asset('img/photos/pastelmodèle.jpg') }}"
+                                            alt="photo d'un cavalier king charles scindée en deux (photographie originale originale et version pastel)"/></a>
+                            </div>
+                        </div>
                         <div class="col-lg-6 col-12">
                             <h2>Quelle technique ? </h2>
                             <p class="order-technique-p text-justify">Deux possibilités s'offrent à vous pour le choix
@@ -91,13 +105,14 @@
         <section class="section section-light">
             <div class="container container-order-format">
                 <div class="order-format">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-lg-6 col-12">
                             <h2>Quel format ? </h2>
                             <p class="order-format-p text-justify">Le choix du format pourra dépendre de plusieurs
                                 critères. Cela peut avoir un rapport avec la taille de votre animal, être une question
                                 de budget ou tout simplement selon vos préférences. Vous pouvez consulter dans l'onglet
-                                <a href={{ path('tariff') }}>" Tarifs "</a> un tableau comportant diverses propositions de formats. Toutefois si vous
+                                <a href={{ path('tariff') }}>" Tarifs "</a> un tableau comportant diverses propositions
+                                de formats. Toutefois si vous
                                 m'en faites la demande, il est tout à fait possible de voir ensemble d'autres dimensions
                                 (carré, rond etc.).</p>
                         </div>

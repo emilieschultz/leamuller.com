@@ -1,13 +1,17 @@
 #order {
   display: block;
 
-
   .order-photographie-p {
     display: inline-block;
     padding: 10px;
     background-color: $light;
     border-radius: 1%;
     margin-bottom: 40px;
+
+    .row {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 
   .order-take-picture {
@@ -23,6 +27,7 @@
       transform: rotate(7deg);
     }
 
+
     .img-thumbnail {
       padding: 8px 8px 30px 8px;
 
@@ -34,19 +39,35 @@
 
     }
   }
+  #order-technique {
 
-  .order-technique-p {
-    display: inline-block;
-    padding: 10px;
-    background-color: lighten($light, 20);
-    border-radius: 1%;
+    .order-model {
+      display: flex;
+      flex-direction: row ;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-bottom: 40px;
+
+      .img-pastel-painting:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .order-technique-p {
+      display: inline-block;
+      padding: 10px;
+      background-color: lighten($light, 20);
+      border-radius: 1%;
+    }
   }
 
   .order-format-p {
-    display: inline-block;
     padding: 10px;
     background-color: $light;
     border-radius: 1%;
+
   }
 
 }
