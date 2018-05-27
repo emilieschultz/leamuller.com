@@ -3,22 +3,44 @@
     text-align: center;
     color: #fff;
     background-color: $dark;
-    height: 150px;
+    height: 250px;
 
 
     .footer-btn-mail {
-        padding: 45px 0;
-        margin-bottom: 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 96px 0 3px 0;
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 40px 0 3px 0;
+        }
     }
 
     .footer-credits {
-        padding: 53px 0;
-        margin-bottom: 0;
+
+
+        @include media-breakpoint-up(md) {
+            padding: 103px 0 3px 0;
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 20px 0 3px 0;
+        }
+
     }
 
     .socials {
-        padding: 47px;
+        @include media-breakpoint-up(md) {
+            padding: 93px 0 3px 0;
+            margin-bottom: 0;
+        }
 
+        @include media-breakpoint-down(sm) {
+            padding: 20px 0 3px 0;
+        }
         .fab {
             justify-content: space-around;
             background-color: dimgrey;

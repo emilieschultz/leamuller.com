@@ -1,5 +1,7 @@
-$color-pricing-light: #E6E6E6;
+$color-pricing-light: #d8d4d4;
 $color-pricing-dark: #C7E5E3;
+$color-pricing-darker: #a9d3d0 ;
+$color-pricing-lighter: #bfb4af;
 
 .pricing {
   border-radius: 10px;
@@ -11,9 +13,19 @@ $color-pricing-dark: #C7E5E3;
     background-color: $color-pricing-light;
   }
 
+  &.pricing-lighter {
+    background-color: $color-pricing-lighter;
+  }
+
+
   &.pricing-dark {
     background-color: $color-pricing-dark;
   }
+
+  &.pricing-darker {
+    background-color: $color-pricing-darker;
+  }
+
 
   .pricing-format {
     padding-bottom: 8px;
