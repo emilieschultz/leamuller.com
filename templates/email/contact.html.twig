@@ -1,0 +1,16 @@
+<p>Bonjour,</p>
+
+<p><strong>{{ contact.firstname }} {{ contact.lastname }}</strong> vous a envoyé une demande de contact : </p>
+
+<p><strong>Message</strong></p>
+
+<p>
+    {{ contact.message }}
+</p>
+
+
+<p><strong>Email</strong> : {{ contact.email }}</p>
+
+{% if contact.phoneNumber is not null %}
+<p><strong>Téléphone</strong> : {{ contact.phoneNumber }}</p>
+{% endif %}

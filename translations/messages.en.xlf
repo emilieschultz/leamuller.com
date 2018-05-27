@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="fr" trgLang="en">
+  <file id="messages.en">
+    <unit id="HEQtq3x" name="contact_form.label.firstname">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ContactType.php:28</note>
+      </notes>
+      <segment>
+        <source>contact_form.label.firstname</source>
+        <target>Firstname</target>
+      </segment>
+    </unit>
+    <unit id="g6D7EkS" name="contact_form.label.lastname">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ContactType.php:31</note>
+      </notes>
+      <segment>
+        <source>contact_form.label.lastname</source>
+        <target>Lastname</target>
+      </segment>
+    </unit>
+    <unit id="PwRhyt2" name="contact_form.label.message">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ContactType.php:40</note>
+      </notes>
+      <segment>
+        <source>contact_form.label.message</source>
+        <target>Message</target>
+      </segment>
+    </unit>
+    <unit id="0cIYu8B" name="contact.message.intro">
+      <notes>
+        <note category="file-source" priority="1">templates/pages/contact.html.twig:11</note>
+      </notes>
+      <segment>
+        <source>contact.message.intro</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="TkqnjhW" name="contact_form.label.email">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ContactType.php:34</note>
+      </notes>
+      <segment>
+        <source>contact_form.label.email</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="CN5w754" name="contact_form.label.images">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ContactType.php:43</note>
+      </notes>
+      <segment>
+        <source>contact_form.label.images</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="68VHYDC" name="contact_form.label.phone_number">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Type/ContactType.php:37</note>
+      </notes>
+      <segment>
+        <source>contact_form.label.phone_number</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="GuFIslS" name="contact_form.button.add_an_image">
+      <notes>
+        <note category="file-source" priority="1">templates/pages/contact.html.twig:39</note>
+      </notes>
+      <segment>
+        <source>contact_form.button.add_an_image</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="OC_D_K4" name="contact_form.button.cancel">
+      <notes>
+        <note category="file-source" priority="1">templates/pages/contact.html.twig:45</note>
+      </notes>
+      <segment>
+        <source>contact_form.button.cancel</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="jJgjVOk" name="contact_form.button.send">
+      <notes>
+        <note category="file-source" priority="1">templates/pages/contact.html.twig:46</note>
+      </notes>
+      <segment>
+        <source>contact_form.button.send</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="IcbGYve" name="contact_form.message.success">
+      <notes>
+        <note category="file-source" priority="1">templates/pages/contact.html.twig:5</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>contact_form.message.success</source>
+        <target></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

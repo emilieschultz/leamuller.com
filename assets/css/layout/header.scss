@@ -15,9 +15,13 @@ $header-line-width: 300px;
     border-radius: 5px;
     background-color: rgb(242, 138, 116);
     //position: absolute;
-    //margin: auto;
 
     //z-index: 1015;
+
+    @include media-breakpoint-down(sm) {
+      margin: 20px auto 0 auto;
+      width: 80%;
+    }
   }
 
   .header-logo {
@@ -25,11 +29,24 @@ $header-line-width: 300px;
     width: 500px;
     //z-index: 1010;
 
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
+
   }
   .header-art-animalier {
     position: absolute;
     left: 265px;
     top: 92px;
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      margin: -30px auto 0 auto;
+      left: auto;
+      top: auto;
+      display: block;
+    }
   }
 
 }
