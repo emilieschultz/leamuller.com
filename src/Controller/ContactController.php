@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Form\Model\Contact;
 use App\Form\Type\ContactType;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
@@ -17,9 +18,11 @@ class ContactController extends Controller
 
     /**
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @param \Swift_Mailer $mailer
+     * @param LoggerInterface $logger
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
-    public function __invoke(Request $request, \Swift_Mailer $mailer)
+    public function __invoke(Request $request, \Swift_Mailer $mailer, LoggerInterface $logger)
     {
         $form = $this->createForm(ContactType::class, null, [
             'method' => Request::METHOD_POST,
@@ -31,7 +34,7 @@ class ContactController extends Controller
             $contact = $form->getData();
 
             $message = (new \Swift_Message('[Website] Demande de contact leamuller.com - ' . $contact->getEmail()))
-                ->setFrom($contact->getEmail())
+                ->setFrom('contact@leamuller.com')
                 ->setTo('contact@leamuller.com')
                 ->setBody(
                     $this->renderView(
@@ -64,7 +67,7 @@ class ContactController extends Controller
             try {
                 $mailer->send($message);
             } catch (\Exception $e) {
-
+                $logger->error('ContactController ' . $message);
             }
 
             return $this->redirectToRoute('contact', [
