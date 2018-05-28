@@ -15,3 +15,15 @@ Start node dev server
 
  Then go to `npm run watch`
 
+
+Translations
+--- 
+Extract translation messages
+``` bash
+php bin/console translation:extract
+```
+
+Delete obsolete translation messages
+``` bash
+translation:delete-obsolete
+```

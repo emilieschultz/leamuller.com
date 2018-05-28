@@ -1,19 +1,72 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div id="contact">
-        <div class="container">
-            <section class="section section-light">
 
-            </section>
+{% block success %}
+    <h2>{{ 'contact_form.message.success'|trans }}</h2>
+{% endblock %}
 
-            <section class="section section-dark">
 
-            </section>
+{% block form %}
+    <p>
+        {{ 'contact.message.intro'|trans }}
+    </p>
 
+    {{ form_errors(form) }}
+
+    {{ form_start(form, { attr: { novalidate: 'novalidate'}}) }}
+
+    <div class="row">
+        <div class="col-6">
+            {{ form_row(form.firstname) }}
         </div>
-
-
+        <div class="col-6">
+            {{ form_row(form.lastname) }}
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-6">
+            {{ form_row(form.email) }}
+        </div>
+        <div class="col-6">
+            {{ form_row(form.phoneNumber) }}
+        </div>
+    </div>
+
+    {{ form_row(form.message, { attr: { rows: 8 }}) }}
+
+    <a href="#"
+       class="add-image-link btn btn-sm btn-primary float-right">{{ 'contact_form.button.add_an_image'|trans }}</a>
+    {{ form_row(form.images) }}
+
+    {{ form_rest(form) }}
+
+    <div class="d-flex justify-content-center">
+        <a href="{{ app.request.uri }}" class="btn btn-lg btn-outline-primary mr-3">{{ 'contact_form.button.cancel'|trans }}</a>
+        <button class="btn btn-lg btn-primary ml-3">{{ 'contact_form.button.send'|trans }}</button>
+    </div>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block body %}
+    <div id="contact">
+        <section class="section section-light">
+
+            <div class="container d-flex justify-content-center">
+                <div class="col-12 col-sm-8">
+                    {% if app.request.get('success', false) %}
+                        {{ block('success') }}
+                    {% else %}
+                        {{ block('form') }}
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('build/js/contact.js') }}"></script>
 {% endblock %}
