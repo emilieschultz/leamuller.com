@@ -8,17 +8,17 @@
         <ul class="navbar-nav mr-auto ml-auto">
             <li class="nav-item {% if app.request.get('_route') == 'home' %}active{% endif %}">
                 <a class="nav-link" href="{{ path('home') }}">Accueil <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item {% if app.request.get('_route') == 'about' %}active{% endif %}">
                 <a class="nav-link" href="{{ path('about') }}">A propos</a>
+            </li>
+            </li>
+            <li class="nav-item {% if app.request.get('_route') == 'order' %}active{% endif %}">
+                <a class="nav-link" href="{{ path('order') }}">Commande</a>
             </li>
             <li class="nav-item {% if app.request.get('_route') in ['gallery', 'gallery_watercolors', 'gallery_paintings', 'gallery_pastel'] %}active{% endif %}">
                 <a class="nav-link" href="{{ path('gallery') }}">
                     Galerie
                 </a>
-            </li>
-            <li class="nav-item {% if app.request.get('_route') == 'order' %}active{% endif %}">
-                <a class="nav-link" href="{{ path('order') }}">Commande</a>
             </li>
             <li class="nav-item {% if app.request.get('_route') == 'tariff' %}active{% endif %}">
                 <a class="nav-link" href="{{ path('tariff') }}">Tarifs</a>

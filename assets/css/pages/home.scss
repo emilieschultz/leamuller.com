@@ -41,24 +41,28 @@
     }
   }
 
-    .home-take-picture {
-      .home-bird {
-        width: 40px;
-        fill: $dark;
-      }
+  h2 {
+    text-align: center;
+  }
 
-      }
-
-      .home-lezard {
-        width: 40px;
-        fill: $dark;
-
-      }
-
-      .home-dog {
-        width: 40px;
-        fill: $dark;
-
-      }
+  .home-take-picture {
+    .home-bird {
+      width: 40px;
+      fill: $dark;
     }
+
+  }
+
+  .home-lezard {
+    width: 40px;
+    fill: $dark;
+
+  }
+
+  .home-dog {
+    width: 40px;
+    fill: $dark;
+
+  }
+}
 
