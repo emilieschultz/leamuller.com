@@ -64,5 +64,17 @@
     fill: $dark;
 
   }
+
+  .order-gallery {
+
+    .order-gallery-img {
+      width: 110%;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+    }
+  }
 }
 
