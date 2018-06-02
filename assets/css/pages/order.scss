@@ -3,10 +3,11 @@
 
   .order-photographie-p {
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     background-color: $light;
     border-radius: 1%;
     margin-bottom: 40px;
+    font-size: 1.2em;
 
     .row {
       display: flex;
@@ -23,13 +24,30 @@
     height: 100%;
     padding-bottom: 40px;
 
-    .rotate-img {
+    .order-take-picture-wrong {
+      @extend .img-thumbnail;
       transform: rotate(7deg);
+      width: 280px;
+      z-index: 100;
     }
 
+    .order-take-picture-good {
+      @extend .img-thumbnail;
+      width: 300px;
+      z-index: 200;
+    }
+
+    .order-take-picture-img {
+      width: 100%;
+    }
+
+    .order-take-picture-check {
+      width: 70px;
+      padding-top: 8px;
+    }
 
     .img-thumbnail {
-      padding: 8px 8px 30px 8px;
+      padding: 8px;
 
       -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
       -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
@@ -50,24 +68,20 @@
       height: 100%;
       padding-bottom: 40px;
 
+
+      .img-pastel-painting {
+        img {
+          @extend .img-thumbnail;
+          width: auto;
+          max-width: inherit;
+          height: 440px;
+        }
+
+        margin: 5px;
+      }
       .img-pastel-painting:hover {
         opacity: 0.8;
       }
     }
-
-    .order-technique-p {
-      display: inline-block;
-      padding: 10px;
-      background-color: lighten($light, 20);
-      border-radius: 1%;
-    }
   }
-
-  .order-format-p {
-    padding: 10px;
-    background-color: $light;
-    border-radius: 1%;
-
-  }
-
 }

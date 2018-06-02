@@ -18,41 +18,35 @@
                 <div class="order-photographie">
                     <div class="row">
                         <div class="col-lg-6 col-12">
-                            <h2>Quelle photographie ? </h2>
-                            <p class="order-photographie-p text-justify">Il se peut que vous ayez déjà de
-                                fabuleux
-                                clichés de votre compagnon, auquel cas vous
-                                n'aurez plus qu'à me les envoyer. À l'inverse, si vous n'en possédez aucun
-                                ou
-                                qu'il
-                                ne met pas suffisamment en valeur votre animal, un petit shooting photo
-                                s'imposera !<br><br>
-                                ​
+                            <h2>Quelle photographie ?</h2>
 
-                                L'idéal est de prendre une photo en extérieur ou avec une lumière naturelle,
-                                il
-                                faut
-                                éviter à tout prix le contre-jour ainsi qu'un éclairage trop direct (cela
-                                pourrait
-                                altérer les couleurs). N'oubliez pas de vous positionner à la hauteur de
-                                votre
-                                animal pour réaliser un bon cadrage.<br><br>
-
-                                ​
-
-                                Bon courage et soyez patient pour saisir le meilleur moment ;-)</p>
-
-
+                            <div class="block block-light">
+                                <p>
+                                    Il se peut que vous ayez déjà de fabuleux clichés de votre compagnon, auquel cas vous n'aurez plus qu'à me les transmettre. À l'inverse, si vous n'en possédez aucun ou qu'il ne met pas suffisamment en valeur votre animal, un petit shooting photo s'imposera !
+                                </p>
+                                <p>
+                                    L'idéal est de prendre une photo en extérieur ou avec une lumière naturelle, il faut éviter à tout prix le contre-jour ainsi qu'un éclairage trop direct (cela pourrait altérer les couleurs). Positionnez-vous à la hauteur de votre animal pour réaliser un bon cadrage, et armez-vous de patience pour capturer la plus belle expression 😉
+                                </p>
+                                <p>
+                                    Privilégiez des appareils photos numériques ou bien des smartphones ayant une bonne qualité d'image, car plus votre photographie sera nette, plus il sera facile pour moi de retranscrire les détails.
+                                </p>
+                            </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="order-take-picture">
-                                <img class="img-thumbnail" width="200"
-                                     src="{{ asset('img/photos/salem-good.JPG') }}"
-                                     alt="belle photo d'un chat noir"/>
-                                <img class="img-thumbnail rotate-img" width="160"
-                                     src="{{ asset('img/photos/salem-not-good.jpg') }}"
-                                     alt="photo moins réussie d'un chat noir"/>
-
+                                <figure class="order-take-picture-good">
+                                    <img class="order-take-picture-img" src="{{ asset('img/photos/salem-good.JPG') }}"
+                                         alt="belle photo d'un chat noir"/>
+                                    <img class="order-take-picture-check"
+                                         src="{{ asset('img/check_green.png') }}" alt="">
+                                </figure>
+                                <figure class="order-take-picture-wrong">
+                                    <img class="order-take-picture-img"
+                                         src="{{ asset('img/photos/salem-not-good.jpg') }}"
+                                         alt="photo moins réussie d'un chat noir"/>
+                                    <img class="order-take-picture-check"
+                                         src="{{ asset('img/check_red.png') }}" alt="">
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -66,7 +60,7 @@
                     <div class="row d-flex flex-lg-row-reverse">
                         <div class="col-lg-6 col-12">
                             <h2>Quelle technique ? </h2>
-                            <p class="order-technique-p text-justify">Deux possibilités s'offrent à vous pour le choix
+                            <p class="block block-lighter">Deux possibilités s'offrent à vous pour le choix
                                 de la technique.<br><br>
 
                                 D'un côté il y a le <strong>pastel sec</strong> que j'utilise sur un papier ne
@@ -90,12 +84,10 @@
                             <div class="order-model">
                                 <a href="{{ asset('img/photos/peinturemodèle.jpg') }}" class="popup img-pastel-painting"
                                    title="Version peinte à gauche et version originale à droite"><img
-                                            class="img-thumbnail" width="157"
                                             src="{{ asset('img/photos/peinturemodèle.jpg') }}"
                                             alt="photo d'un cocker noir et blanc scindée en deux (photographie originale et version peinture"/></a>
                                 <a href="{{ asset('img/photos/pastelmodèle.jpg') }}" class="popup img-pastel-painting"
                                    title="Version au pastel à gauche et version originale à droite"><img
-                                            class="img-thumbnail" width="200"
                                             src="{{ asset('img/photos/pastelmodèle.jpg') }}"
                                             alt="photo d'un cavalier king charles scindée en deux (photographie originale originale et version pastel)"/></a>
                             </div>
@@ -110,10 +102,10 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-12">
                             <h2>Quel format ? </h2>
-                            <p class="order-format-p text-justify">Le choix du format pourra dépendre de plusieurs
+                            <p class="block block-light">Le choix du format pourra dépendre de plusieurs
                                 critères. Cela peut avoir un rapport avec la taille de votre animal, être une question
                                 de budget ou tout simplement selon vos préférences. Vous pouvez consulter dans l'onglet
-                                <a href={{ path('tariff') }}><strong>" Tarifs "</strong></a> un tableau comportant diverses propositions
+                                <a href={{ path('tariff') }}><strong>Tarifs</strong></a> un tableau comportant diverses propositions
                                 de formats. Toutefois si vous
                                 m'en faites la demande, il est tout à fait possible de voir ensemble d'autres dimensions
                                 (carré, rond etc.).</p>

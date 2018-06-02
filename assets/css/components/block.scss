@@ -1,0 +1,26 @@
+.block {
+  display: inline-block;
+  padding: 20px;
+  background-color: $light;
+  border-radius: 1%;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+  text-align: justify;
+
+
+
+  &.block-lighter {
+    background-color: lighten($light, 20);
+    color: #222;
+  }
+
+  &.block-light {
+    background-color: $light;
+    color: #222;
+  }
+
+  &.block-dark {
+    background-color: #222;
+    color: $light;
+  }
+}
