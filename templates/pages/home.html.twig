@@ -16,7 +16,7 @@
                                 commande,
                                 d'après photographie.</p>
                             <p>Sur mon site, vous trouverez l'ensemble de mes réalisations à travers mes galeries
-                                d'aquarelles, de pastels et de peintures.</p>
+                               de pastels, de peintures et d'aquarelles.</p>
 
                             <p>Il est possible de me suivre via ma page Facebook, je publie fréquemment l’avancée de mes
                                 travaux, et elle me permet par ailleurs d’être un peu plus proche de vous :-)</p>
@@ -24,8 +24,9 @@
 
                         <div class="speed-drawing-text">
                             <p>Je possède également une chaîne YouTube sur laquelle vous pourrez découvrir mes vidéos de
-                                « speed drawing » (le speed drawing est une vidéo montrant, de manière accélérée, la
-                                réalisation d'un dessin)..</p>
+                                « <strong>speed drawing</strong> » (le speed drawing est une vidéo montrant, de manière
+                                accélérée, la
+                                réalisation d'un dessin).</p>
 
                             <p class="text-center">Je vous souhaite une très bonne visite !</p>
                         </div>
@@ -42,8 +43,6 @@
                 <div class="home-gallery">
                     <div class="row">
                         <div class="col-lg-9 offset-lg-1">
-                            <div class="home-gallery-text">
-                            </div>
                             <a href="{{ path('gallery') }}#gallery-pastel"><img class="home-gallery-img"
                                                                                 src="{{ asset('img/photos/galerie.jpg') }}"
                                                                                 alt="image galerie des oeuvres"></a>
@@ -93,7 +92,20 @@
                             j'utiliserai ainsi que les dimensions de votre tableau. Pour plus de conseils afin de
                             vous aider dans votre décision, je vous invite à parcourir l'onglet <a
                                     href={{ path('order') }}><strong>" Commande "</strong>.</a></p>
+
+
                     </div>
+                        <div class="container container-order-gallery">
+                            <div class="order-gallery">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <a href="{{ path('order') }}"><img class="order-gallery-img"
+                                                                           src="{{ asset('img/photos/commande-galerie.png') }}"
+                                                                           alt="image page commande"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
 
