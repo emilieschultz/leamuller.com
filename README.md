@@ -27,3 +27,8 @@ Delete obsolete translation messages
 ``` bash
 translation:delete-obsolete
 ```
+
+Optimize images
+```
+mogrify -resize 1600 -quality 60 *.jpg
+```
