@@ -3,7 +3,7 @@
 {% block title %}{{ parent() }} - Accueil{% endblock %}
 
 {% block body %}
-    <div class="home">
+    <section class="home">
 
         <section class="section section-light">
 
@@ -16,7 +16,7 @@
                                 commande,
                                 d'après photographie.</p>
                             <p>Sur mon site, vous trouverez l'ensemble de mes réalisations à travers mes galeries
-                               de pastels, de peintures et d'aquarelles.</p>
+                                de pastels, de peintures et d'aquarelles.</p>
 
                             <p>Il est possible de me suivre via ma page Facebook, je publie fréquemment l’avancée de mes
                                 travaux, et elle me permet par ailleurs d’être un peu plus proche de vous :-)</p>
@@ -92,24 +92,23 @@
                             j'utiliserai ainsi que les dimensions de votre tableau. Pour plus de conseils afin de
                             vous aider dans votre décision, je vous invite à parcourir l'onglet <a
                                     href={{ path('order') }}><strong>" Commande "</strong>.</a></p>
-
-
                     </div>
-                        <div class="container container-order-gallery">
-                            <div class="order-gallery">
-                                <div class="row">
-                                    <div class="col-lg-10">
-                                        <a href="{{ path('order') }}"><img class="order-gallery-img"
-                                                                           src="{{ asset('img/photos/commande-galerie.png') }}"
-                                                                           alt="image page commande"></a>
-                                    </div>
+
+
+                    <div class="container container-order-gallery">
+                        <div class="order-gallery">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <a href="{{ path('order') }}"><img class="order-gallery-img"
+                                                                       src="{{ asset('img/photos/commande-galerie.png') }}"
+                                                                       alt="image page commande"></a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-
-    </div>
-    </div>
+        </section>
+    </section>
 
 {% endblock %}
