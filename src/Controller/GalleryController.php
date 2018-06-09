@@ -106,11 +106,6 @@ class GalleryController extends Controller
             ],
 
             [
-                'img' => 'img/photos/photo-29.jpg',
-                'title' => "Toucan, 40x80cm",
-            ],
-
-            [
                 'img' => 'img/photos/photo-4.jpg',
                 'title' => "Gorille, 24x30cm",
             ],
@@ -131,13 +126,13 @@ class GalleryController extends Controller
             ],
 
             [
-                'img' => 'img/photos/cigogne.jpg',
-                'title' => "Cigogne, 24x30cm",
+                'img' => 'img/photos/photo-29.jpg',
+                'title' => "Toucan, 40x80cm",
             ],
 
             [
-                'img' => 'img/photos/photo-26.jpg',
-                'title' => "Martin Pêcheur, 11cm",
+                'img' => 'img/photos/cigogne.jpg',
+                'title' => "Cigogne, 24x30cm",
             ],
 
             [
