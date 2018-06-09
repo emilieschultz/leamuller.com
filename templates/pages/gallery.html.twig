@@ -5,29 +5,6 @@
 {% block body %}
     <div class="gallery">
 
-        {#{% set paints = [#}
-            {#{ photoName: 'photo-9.jpg', title: 'titre' },#}
-            {#{ photoName: 'photo-16.jpg', title: 'titre 2' },#}
-            {#{ photoName: 'photo-25.jpg', title: 'title 3'},#}
-            {#{ photoName: 'photo-26.jpg', title: 'title 3'}#}
-        {#] %}#}
-
-        {#{{ dump(paints) }}#}
-
-        {#<div class="container">#}
-            {#<div class="row">#}
-                {#{% for paint in paints %}#}
-                    {#<div class="col-4">#}
-                        {#<a href="{{ asset('img/photos/' ~ paint.photoName) }}" class="popup" title="{{ paint.title }}">#}
-                            {#<img width="100%" src="{{ asset('img/photos/' ~ paint.photoName) }}" alt="" class="img-responsive"/>#}
-                        {#</a>#}
-                    {#</div>#}
-
-                {#{% endfor %}#}
-            {#</div>#}
-        {#</div>#}
-
-
         <div id="gallery-pastel">
             <section class="section section-light">
                 <div class="container">
@@ -35,43 +12,13 @@
                         <h2 class="text-center">Pastel</h2>
                     </div>
                     <div class="row">
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/ondine-2.jpg') }}" class="popup" title="Sacré de Birmanie, 30x40cm"><img
-                                        src="{{ asset('img/photos/ondine-2.jpg') }}" alt="chat blanc"></a>
-                            <a href="{{ asset('img/photos/photo-9.jpg') }}" class="popup" title="Méduse, 24x32cm"><img
-                                        src="{{ asset('img/photos/photo-9.jpg') }}" alt="jellyfish pastel"></a>
-                            <a href="{{ asset('img/photos/photo-16.jpg') }}" class="popup" title="Cavalier King Charles, 30x40cm"><img
-                                        src="{{ asset('img/photos/photo-16.jpg') }}" alt="dog pastel"></a>
-                            <a href="{{ asset('img/photos/photo-25.jpg') }}" class="popup" title="Macaque de Barbarie, 18x24cm"><img
-                                        src="{{ asset('img/photos/photo-25.jpg') }}" alt="barbary macaque pastel"></a>
-
-
-
-                        </div>
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/salem-2.jpg') }}" class="popup" title="Bleu russe, 30x40cm"><img
-                                        src="{{ asset('img/photos/salem-2.jpg') }}" alt="blue cat pastel"></a>
-                            <a href="{{ asset('img/photos/photo-11.jpg') }}" class="popup" title="Hibou & Harfang des neiges, format A3"><img
-                                        src="{{ asset('img/photos/photo-11.jpg') }}" alt="owls pastel"></a>
-                            <a href="{{ asset('img/photos/photo-14.jpg') }}" class="popup" title="Berger Allemand, 30x40cm"><img
-                                        src="{{ asset('img/photos/photo-14.jpg') }}" alt="german shepherd pastel"></a>
-                            <a href="{{ asset('img/photos/d45399_bf5fec1de6fc49f8bce8f4bbb77db0ad_mv2_d_4000_6000_s_4_2.jpg') }}" class="popup" title="Chat, 30x40cm"><img
-                                    src="{{ asset('img/photos/d45399_bf5fec1de6fc49f8bce8f4bbb77db0ad_mv2_d_4000_6000_s_4_2.jpg') }}" alt="cat pastel"></a>
-
-                        </div>
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/photo-23.jpg') }}" class="popup" title="Calopsittes, 18x24cm"><img
-                                        src="{{ asset('img/photos/photo-23.jpg') }}" alt="cockatiels pastel"></a>
-                            <a href="{{ asset('img/photos/IMG_2679.jpg') }}" class="popup" title="Panthère noire, format A4"><img
-                                        src="{{ asset('img/photos/panthere.jpg') }}" alt="panthère noire, format A4"></a>
-                            <a href="{{ asset('img/photos/IMG_2676.jpg') }}" class="popup" title="Smaug, format A4"><img
-                                        src="{{ asset('img/photos/IMG_2676.jpg') }}" alt="Smaug, format A4"></a>
-                            <a href="{{ asset('img/photos/photo-12.jpg') }}" class="popup" title="Sacré de Birmanie, format A3"><img
-                                        src="{{ asset('img/photos/photo-12.jpg') }}" alt="white cat pastel"></a>
-
-
-                        </div>
-
+                        {% for pastels in arrPastels %}
+                            <div class="col-4">
+                                {% for pastel in pastels %}
+                                    <a href="{{ asset(pastel.img) }}" class="popup" title="{{ pastel.title }}"><img src="{{ asset(pastel.img) }}" alt="{{ pastel.title }}"></a>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
 
@@ -85,49 +32,13 @@
                         <h2 class="text-center">Peinture</h2>
                     </div>
                     <div class="row">
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/raton-laveur.jpg') }}" class="popup" title="Raton laveur, 20x20cm"><img
-                                        src="{{ asset('img/photos/raton-laveur.jpg') }}" alt="raccoon paintings"></a>
-                            <a href="{{ asset('img/photos/photo-19.jpg') }}" class="popup" title="Irish Cob, 56x56cm"><img
-                                        src="{{ asset('img/photos/photo-19.jpg') }}" alt="horse paintings"></a>
-                            <a href="{{ asset('img/photos/photo-18.jpg') }}" class="popup" title="Bergers Malinois, 73x54cm"><img
-                                        src="{{ asset('img/photos/photo-18.jpg') }}" alt="two dogs paintings"></a>
-                            <a href="{{ asset('img/photos/photo-26.jpg') }}" class="popup" title="Martin Pêcheur, 11cm"><img
-                                        src="{{ asset('img/photos/photo-26.jpg') }}" alt="kingfisher paintings"></a>
-                            <a href="{{ asset('img/photos/photo-3.jpg') }}" class="popup" title="Cocker, 38x55cm"><img
-                                        src="{{ asset('img/photos/photo-3.jpg') }}" alt="cocker paintings"></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/photo-4.jpg') }}" class="popup" title="Gorille, 24x30cm"><img
-                                        src="{{ asset('img/photos/photo-4.jpg') }}" alt="gorilla paintings"></a>
-                            <a href="{{ asset('img/photos/photo-20.jpg') }}" class="popup" title="Papillon, 11cm"><img
-                                        src="{{ asset('img/photos/photo-20.jpg') }}" alt="butterfly paintings"></a>
-                            <a href="{{ asset('img/photos/photo-10.jpg') }}" class="popup" title="Chat Noir, 20x20cm"><img
-                                        src="{{ asset('img/photos/photo-10.jpg') }}" alt="black cat paintings"></a>
-                            <a href="{{ asset('img/photos/photo-15.jpg') }}" class="popup" title="Berger Australien, 30x40cm"><img
-                                        src="{{ asset('img/photos/photo-15.jpg') }}" alt="australian shepherd paintings"></a>
-                            <a href="{{ asset('img/photos/cigogne.jpg') }}" class="popup" title="Cigogne, 24x30cm"><img
-                                        src="{{ asset('img/photos/cigogne.jpg') }}" alt="cigogne paintings"></a>
-                            <a href="{{ asset('img/photos/meduse.jpg') }}" class="popup" title="Méduse, 60x30cm"><img
-                                        src="{{ asset('img/photos/meduse.jpg') }}" alt="jellyfish paintings"></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/chimpanze-min.jpg') }}" class="popup" title="Chimpanzé, 50x73cm"><img
-                                        src="{{ asset('img/photos/chimpanze-min.jpg') }}"
-                                        alt="monkey paintings"></a>
-                            <a href="{{ asset('img/photos/photo-6.jpg') }}" class="popup" title="Hérisson, 20x20cm"><img
-                                        src="{{ asset('img/photos/photo-6.jpg') }}" alt="hedgehog paintings"></a>
-                            <a href="{{ asset('img/photos/photo-17.jpg') }}" class="popup" title="Lémurien, 11cm"><img
-                                        src="{{ asset('img/photos/photo-17.jpg') }}"
-                                        alt="lemur paintings"></a>
-                            <a href="{{ asset('img/photos/photo-27.jpg') }}" class="popup" title="Perroquet, 41x27cm"><img
-                                        src="{{ asset('img/photos/photo-27.jpg') }}" alt="parrot paintings"></a>
-                            <a href="{{ asset('img/photos/photo-29.jpg') }}" class="popup" title="Toucan, 40x80cm"><img
-                                        src="{{ asset('img/photos/photo-29.jpg') }}" alt="toucan paintings"></a>
-
-
-
-                        </div>
+                        {% for paintings in arrPaintings %}
+                            <div class="col-4">
+                                {% for painting in paintings %}
+                                    <a href="{{ asset(painting.img) }}" class="popup" title="{{ painting.title }}"><img src="{{ asset(painting.img) }}" alt="{{ painting.title }}"></a>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
@@ -140,44 +51,14 @@
                         <h2 class="text-center">Aquarelle</h2>
                     </div>
                     <div class="row">
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/photo-0.jpg') }}" class="popup"
-                               title="Rouge-gorge, format A5"><img
-                                        src="{{ asset('img/photos/photo-0.jpg') }}" alt="red bird watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-5.jpg') }}" class="popup" title="Guépard, Format A5">
-                                <img
-                                        src="{{ asset('img/photos/photo-5.jpg') }}" alt="cheetah watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-21.jpg') }}" class="popup" title="Raton Laveur, format A4"><img
-                                        src="{{ asset('img/photos/photo-21.jpg') }}" alt="raccoon watercolors"></a>
-
-                        </div>
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/photo-13.jpg') }}" class="popup"
-                               title="Les Inséparables, format A5"><img
-                                        src="{{ asset('img/photos/photo-13.jpg') }}" alt="parrots watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-7.jpg') }}" class="popup" title="Héron, 24X32cm"><img
-                                        src="{{ asset('img/photos/photo-7.jpg') }}" alt="heron watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-1.jpg') }}" class="popup"
-                               title="Jack Russel, format A5"><img
-                                        src="{{ asset('img/photos/photo-1.jpg') }}" alt="Jack Russel watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-2.jpg') }}" class="popup"
-                               title="Cochons d'Inde, 10x15cm"><img
-                                        src="{{ asset('img/photos/photo-2.jpg') }}" alt="guinea pig watercolors"></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="{{ asset('img/photos/photo-22.jpg') }}" class="popup" title="Cheval,format A5">
-                                <img
-                                        src="{{ asset('img/photos/photo-22.jpg') }}" alt="horse watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-28.jpg') }}" class="popup"
-                               title="Cheval, format A4"><img
-                                        src="{{ asset('img/photos/photo-28.jpg') }}" alt="white horse watercolors"></a>
-                            <a href="{{ asset('img/photos/photo-24.jpg') }}" class="popup" title="Gorille, format A5"><img
-                                        src="{{ asset('img/photos/photo-24.jpg') }}" alt="gorilla watercolors"></a>
-
-
-                        </div>
+                        {% for watercolors in arrWatercolors %}
+                            <div class="col-4">
+                                {% for watercolor in watercolors %}
+                                    <a href="{{ asset(watercolor.img) }}" class="popup" title="{{ watercolor.title }}"><img src="{{ asset(watercolor.img) }}" alt="{{ watercolor.title }}"></a>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
                     </div>
-
                 </div>
             </section>
         </div>

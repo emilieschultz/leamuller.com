@@ -16,9 +16,7 @@ about:
 
 gallery:
     path:         /galerie
-    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
-    defaults:
-        template: pages/gallery.html.twig
+    controller:   App\Controller\GalleryController
 
 gallery_watercolors:
     path:         /galerie-aquarelles
