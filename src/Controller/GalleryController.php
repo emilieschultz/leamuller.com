@@ -96,18 +96,8 @@ class GalleryController extends Controller
             ],
 
             [
-                'img' => 'img/photos/photo-26.jpg',
-                'title' => "Martin Pêcheur, 11cm",
-            ],
-
-            [
-                'img' => 'img/photos/photo-3.jpg',
-                'title' => "Cocker, 38x55cm",
-            ],
-
-            [
-                'img' => 'img/photos/photo-4.jpg',
-                'title' => "Gorille, 24x30cm",
+                'img' => 'img/photos/meduse.jpg',
+                'title' => "Méduse, 60x30cm",
             ],
 
             [
@@ -116,23 +106,13 @@ class GalleryController extends Controller
             ],
 
             [
-                'img' => 'img/photos/photo-10.jpg',
-                'title' => "Chat Noir, 20x20cm",
+                'img' => 'img/photos/photo-29.jpg',
+                'title' => "Toucan, 40x80cm",
             ],
 
             [
-                'img' => 'img/photos/photo-15.jpg',
-                'title' => "Berger Australien, 30x40cm",
-            ],
-
-            [
-                'img' => 'img/photos/cigogne.jpg',
-                'title' => "Cigogne, 24x30cm",
-            ],
-
-            [
-                'img' => 'img/photos/meduse.jpg',
-                'title' => "Méduse, 60x30cm",
+                'img' => 'img/photos/photo-4.jpg',
+                'title' => "Gorille, 24x30cm",
             ],
 
             [
@@ -146,6 +126,31 @@ class GalleryController extends Controller
             ],
 
             [
+                'img' => 'img/photos/photo-15.jpg',
+                'title' => "Berger Australien, 30x40cm",
+            ],
+
+            [
+                'img' => 'img/photos/cigogne.jpg',
+                'title' => "Cigogne, 24x30cm",
+            ],
+
+            [
+                'img' => 'img/photos/photo-26.jpg',
+                'title' => "Martin Pêcheur, 11cm",
+            ],
+
+            [
+                'img' => 'img/photos/photo-3.jpg',
+                'title' => "Cocker, 38x55cm",
+            ],
+
+            [
+                'img' => 'img/photos/photo-10.jpg',
+                'title' => "Chat Noir, 20x20cm",
+            ],
+
+            [
                 'img' => 'img/photos/photo-17.jpg',
                 'title' => "Lémurien, 11cm",
             ],
@@ -153,11 +158,6 @@ class GalleryController extends Controller
             [
                 'img' => 'img/photos/photo-27.jpg',
                 'title' => "Perroquet, 41x27cm",
-            ],
-
-            [
-                'img' => 'img/photos/photo-29.jpg',
-                'title' => "Toucan, 40x80cm",
             ],
         ];
 
