@@ -15,7 +15,7 @@
                         {% for pastels in arrPastels %}
                             <div class="col-4">
                                 {% for pastel in pastels %}
-                                    <a href="{{ asset(pastel.img) }}" class="popup" title="{{ pastel.title }}"><img src="{{ asset(pastel.img) | imagine_filter('thumbnail') }}" alt="{{ pastel.title }}"></a>
+                                    <a href="{{ asset(pastel.image.file.url ~ '?w=1600') }}" class="popup" title="{{ pastel.title }}"><img src="{{ asset(pastel.image.file.url ~ '?w=350') }}" alt="{{ pastel.title }}"></a>
                                 {% endfor %}
                             </div>
                         {% endfor %}
@@ -35,9 +35,9 @@
                         {% for paintings in arrPaintings %}
                             <div class="col-4">
                                 {% for painting in paintings %}
-                                    <a href="{{ asset(painting.img) }}" class="popup" title="{{ painting.title }}"><img src="{{ asset(painting.img) | imagine_filter('thumbnail') }}" alt="{{ painting.title }}"></a>
+                                    <a href="{{ asset(painting.image.file.url ~ '?w=1600') }}" class="popup" title="{{ painting.title }}"><img src="{{ asset(painting.image.file.url ~ '?w=350') }}" alt="{{ painting.title }}"></a>
                                 {% endfor %}
-                            </div>
+                           </div>
                         {% endfor %}
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         {% for watercolors in arrWatercolors %}
                             <div class="col-4">
                                 {% for watercolor in watercolors %}
-                                    <a href="{{ asset(watercolor.img) }}" class="popup" title="{{ watercolor.title }}"><img src="{{ asset(watercolor.img) | imagine_filter('thumbnail') }}" alt="{{ watercolor.title }}"></a>
+                                    <a href="{{ asset(watercolor.image.file.url ~ '?w=1600') }}" class="popup" title="{{ watercolor.title }}"><img src="{{ asset(watercolor.image.file.url ~ '?w=350') }}" alt="{{ watercolor.title }}"></a>
                                 {% endfor %}
                             </div>
                         {% endfor %}
