@@ -20,6 +20,13 @@
         <env name="CONTENTFUL_SPACE_ID" value="required"/>
         <env name="CONTENTFUL_ACCESS_TOKEN" value="required"/>
         <!-- ###- contentful/contentful-bundle ### -->
+
+        <!-- ###+ google/recaptcha ### -->
+        <!-- To use Google Recaptcha, you must register a site on Recaptcha's admin panel: -->
+        <!-- https://www.google.com/recaptcha/admin -->
+        <env name="GOOGLE_RECAPTCHA_SITE_KEY" value=""/>
+        <env name="GOOGLE_RECAPTCHA_SECRET" value=""/>
+        <!-- ###- google/recaptcha ### -->
     </php>
 
     <testsuites>

@@ -17,4 +17,5 @@ return [
     Translation\Bundle\TranslationBundle::class => ['all' => true],
     Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
     Contentful\ContentfulBundle\ContentfulBundle::class => ['all' => true],
+    EWZ\Bundle\RecaptchaBundle\EWZRecaptchaBundle::class => ['all' => true],
 ];

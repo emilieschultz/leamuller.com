@@ -3,6 +3,7 @@
 namespace App\Form\Type;
 
 use App\Form\Model\Contact;
+use EWZ\Bundle\RecaptchaBundle\Form\Type\EWZRecaptchaType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -11,6 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints as Assert;
+use EWZ\Bundle\RecaptchaBundle\Validator\Constraints\IsTrue as RecaptchaTrue;
 
 /**
  * Class ContactType
@@ -54,6 +56,21 @@ class ContactType extends AbstractType
                 ],
                 'by_reference' => false,
             ]);
+        $builder->add('recaptcha', EWZRecaptchaType::class, array(
+            'attr' => array(
+                'options' => array(
+                    'theme' => 'light',
+                    'type'  => 'image',
+                    'size'  => 'normal',
+                    'defer' => true,
+                    'async' => true,
+                )
+            ),
+            'mapped'      => false,
+            'constraints' => array(
+                new RecaptchaTrue()
+            )
+        ));
     }
 
     /**
